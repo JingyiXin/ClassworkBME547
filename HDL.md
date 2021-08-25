@@ -1,3 +1,3 @@
 #HDL
 
-High density lipo something
+High density lipoprotein
