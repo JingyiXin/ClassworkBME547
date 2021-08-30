@@ -12,6 +12,7 @@ def interface():
         print("Make a Choice")
         print("9 --> Quit")
         choice = int(input("Make a Choice"))
+        print(type(choice))
         if choice == 9:
             keep_running = False
             
