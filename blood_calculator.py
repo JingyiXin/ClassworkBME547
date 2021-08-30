@@ -7,9 +7,14 @@ Created on Mon Aug 30 12:39:36 2021
 
 def interface():
     print("Blood Calculator")
-    print("Make a Choice")
-    print("9 - Quit")
-    choice = input("Make a Choice")
+    keep_running = True
+    while keep_running:
+        print("Make a Choice")
+        print("9 --> Quit")
+        choice = int(input("Make a Choice"))
+        if choice == 9:
+            keep_running = False
+            
     print(choice)
     return choice
 
