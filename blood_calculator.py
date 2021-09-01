@@ -4,7 +4,9 @@ Created on Mon Aug 30 12:39:36 2021
 
 @author: Jenny Xin
 """
-
+#print("This is the daabase.py module")
+#print("Its name is {}".format(__name__))
+    
 def interface():
     print("Blood Calculator")
     keep_running = True
@@ -18,6 +20,9 @@ def interface():
             return choice
         HDL_Driver()
         LDL_Driver()
+        
+        
+# HDL
 
 def HDL_Driver():
     HDL_value = hdl_input()
@@ -40,6 +45,7 @@ def hdl_output(HDL_value, HDL_answer):
     print("THe HDL value of {} is considered {}".format(HDL_value, HDL_answer))
     return
 
+# LDL 
 def LDL_Driver():
     LDL_value = ldl_input()
     LDL_character = ldl_analysis(LDL_value)
@@ -63,6 +69,8 @@ def ldl_output(LDL_value, LDL_answer):
     print("THe LDL value of {} is considered {}".format(LDL_value, LDL_answer))
     return
 
-interface()
+if __name__ == "__main__":
+    interface()
+
 
     
