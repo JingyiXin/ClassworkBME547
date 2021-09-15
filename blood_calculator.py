@@ -69,6 +69,12 @@ def ldl_output(LDL_value, LDL_answer):
     print("THe LDL value of {} is considered {}".format(LDL_value, LDL_answer))
     return
 
+def check_input(input):
+    if type(input) != int:
+        return False
+    else:
+        return True
+    
 if __name__ == "__main__":
     interface()
 
