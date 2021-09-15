@@ -6,11 +6,11 @@ Created on Wed Sep  8 12:47:09 2021
 """
 def update(a):
     a[0] = a[0] + 2
-    return a
+    #return a
     
 def main():
     b = [5]
-    x = update(b)
+    update(b)
     print(b)
     print(x)
     
