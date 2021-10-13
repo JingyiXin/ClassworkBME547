@@ -7,4 +7,5 @@ import pytest
 def test_add(a,b,c):
     from near_test import add
     answer = add(a, b)
+    #use approx so you dont have to be Exactly that number. Look up documentation for larger range
     assert pytest.approx(answer) == c
